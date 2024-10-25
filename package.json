@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome lint ./src",
+    "format": "biome format ./src",
+    "fix:lint": "biome lint --write ./src",
+    "fix:format": "biome format --write ./src"
   },
   "dependencies": {
     "@biomejs/biome": "^1.9.4",

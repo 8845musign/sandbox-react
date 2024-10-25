@@ -26,5 +26,24 @@
 		"formatter": {
 			"quoteStyle": "double"
 		}
-	}
+	},
+	"overrides": [
+		{
+			"include": [
+				"next.config.js",
+				"layout.tsx",
+				"page.tsx",
+				"loading.tsx",
+				"error.tsx",
+				"not-found.tsx"
+			],
+			"linter": {
+				"rules": {
+					"style": {
+						"noDefaultExport": "off"
+					}
+				}
+			}
+		}
+	]
 }
