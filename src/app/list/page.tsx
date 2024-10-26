@@ -2,6 +2,7 @@
 
 import type { MouseEvent } from "react";
 
+import Link from "next/link";
 import { useQueryState } from "nuqs";
 
 export default function List() {
@@ -18,6 +19,7 @@ export default function List() {
 				クリア
 			</button>
 			<p>{name || "誰か"}さん</p>
+			<Link href="/">トップ</Link>
 		</>
 	);
 }
